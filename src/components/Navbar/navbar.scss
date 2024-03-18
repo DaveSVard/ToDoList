@@ -1,0 +1,47 @@
+@import './../../styles/vars.scss';
+
+.nav {
+    padding: 20px;
+    background-color: #124c81;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.nav__list-item {
+    font-size: 19px;
+    font-weight: 600;
+    list-style: none;
+    & a {
+        text-decoration: none;
+        color: white;
+    }
+
+    @include media850Mixin {
+        font-size: 15px;
+    }
+}
+
+.active {
+    position: relative;
+    font-size: 25px;
+
+    @include media850Mixin {
+        font-size: 20px;
+    }
+}
+
+.active::after {
+    content: "";
+    width: 100%;
+    
+    position: absolute;
+    top: 95%;
+    left: 0;
+
+    border: 1px solid #675b96;
+}

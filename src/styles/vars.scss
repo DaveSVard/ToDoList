@@ -1,0 +1,18 @@
+// media 
+
+$media850: 850px;
+$media500: 500px;
+
+//mixins
+
+@mixin media850Mixin {
+    @media screen and (max-width: $media850) {
+        @content;
+    }
+}
+
+@mixin media500Mixin {
+    @media screen and (max-width: $media500) {
+        @content;
+    }
+}

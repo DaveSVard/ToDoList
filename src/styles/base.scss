@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+.create-btn {
+    width: 155px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+}
+
+.purpule {
+    color: rgba(128, 0, 128, 0.603);
+}
+
+.cyan {
+    color: rgb(13, 173, 173);
+}
+
+.success {
+    color: green;
+    font-weight: 800;
+}
+
+.waiting {
+    color: red;
+    font-weight: 800;
+}
